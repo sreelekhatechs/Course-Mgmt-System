@@ -1,0 +1,76 @@
+<nav class="navbar sticky-top navbar-expand-lg " id="app-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Course Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="['']">My Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['login']">New Registration</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['coursecr']">Add Course</a>
+        </li>
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+<div class="container"style="background-color: darkcyan;"> <br>
+    <div class="row" >
+   
+        <div class="col-md-6 col-lg-6 col-12  mx-auto p-0">
+            <div class="card">
+                <div class="login-box">
+                    <div class="login-snip"> 
+                        
+                        <h3  style="color: honeydew;">New Course</h3><br>
+                          
+                        <div class="login-space">
+                            
+                                <form  >
+                                    <div class="group">
+                                        <label for="user" class="label"> Course Name</label>
+                                        <!--<input id="user" type="text" class="input"[(ngModel)]="user.Email"name="email"  placeholder="Your Email"> -->
+                                        <!--<label for="user" class="label1"></label>-->
+                                        
+                                       </div>
+                                    <div class="group">
+                                         <label for="user" class="label">Email</label>
+                                         <label for="user" class="label1"></label>
+                                         
+                                        </div>
+                                    <div class="group">
+                                         <label for="pass" class="label">Phone</label>
+                                         <label for="user" class="label1"></label>
+                                          
+                                         </div>
+                                         <div class="group">
+                                            <label for="pass" class="label">Qualification</label>
+                                            <label for="user" class="label1"></label>
+                                            </div>
+                                            <div class="group">
+                                                <label for="pass" class="label">Skill</label>
+                                                <label for="user" class="label1"></label>
+                                                </div>
+                                                <div class="group">
+                                                    <label for="pass" class="label">Address</label>
+                                                    <label for="user" class="label1"></label>
+                                                    </div>
+                                                 
+                                <div class="hr"></div>
+                                                           
+                            </form>
+                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div><br> <br>
+        </div>
+    </div>
+</div>

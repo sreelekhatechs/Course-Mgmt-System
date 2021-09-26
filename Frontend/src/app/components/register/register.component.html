@@ -1,0 +1,69 @@
+
+<nav class="navbar sticky-top navbar-expand-lg " id="app-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Course Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="['']">Home</a>
+        </li>
+               
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+<div class="container"style="background-color: darkcyan;"> <br>
+<div class="row" >
+   
+    <div class="col-md-6 col-lg-6 col-12  mx-auto p-0">
+        <div class="card">
+            <div class="login-box">
+                <div class="login-snip"> 
+                    
+                    <h3  style="color: honeydew;">SignUp</h3><br>
+                    
+
+                    <div class="login-space">
+                        
+                            <form (ngSubmit)="reg()"#f = "ngForm">
+                                <div class="group">
+                                     <label for="user" class="label">Name</label>
+                                      <input id="user" type="text" class="input"name="name" [(ngModel)]="bio.name" placeholder="Your Name"#name="ngModel" [ngClass]="{'invalid-data': name.invalid && f.submitted, 'valid-data': name.valid && f.submitted}" [class.error-border]="name.invalid && f.submitted" pattern='^[a-zA-Z\s]+$' required > 
+                                      <small style="color: rgb(245, 71, 71); font-weight: bolder;" *ngIf ="name.invalid && f.submitted || name.invalid && name.touched">Invalid Username</small>  
+                                    </div>
+                                <div class="group">
+                                     <label for="pass" class="label">Password</label>
+                                      <input id="pass" type="password" class="input"name="pswd" [(ngModel)]="bio.pswd" data-type="password" placeholder="Your password"#password="ngModel"  [ngClass]="{'invalid-data': password.invalid && f.submitted, 'valid-data': password.valid && f.submitted}" [class.error-border]="password.invalid && f.submitted" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%?&])[A-Za-z\d$@$!%?&]{8,}$" required/>
+                                      <small style="color: rgb(245, 71, 71); font-weight: bolder; text-align: justify;" *ngIf = "password.invalid && f.submitted || password.invalid && password.touched">Password should contain minimum 8 characters with at least one uppercase, lowercase, special characters & digits.</small>    
+                                     </div>
+                                <div class="group">
+                                <label class="label">User Type</label>
+                        <select class="input" name="type" [(ngModel)]="bio.type">                          
+                          <option class="input" value="professor">Professor</option>
+                          <option class="input" value="student">Student</option>                          
+                        </select>
+                    </div>
+                                <div class="group"> 
+                                    <button type="submit" class="btn input" style="color: rgb(226, 223, 14);"[disabled]="f.form.invalid">Register</button> </div>
+                            <div class="hr"></div>
+                                                       
+                        </form>
+                        <div class="group">
+                            <label for="check" style="color: azure;"> Already Member?</label>
+                            <a routerLink="login" style="color:goldenrod;">Login</a> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div><br> <br>
+    </div>
+</div>
+</div>
+
+
+

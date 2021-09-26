@@ -1,0 +1,41 @@
+<nav class="navbar sticky-top navbar-expand-lg " id="app-navbar">
+  <div class="container">
+      <a class="navbar-brand" href="#">Course Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class=" nav navbar-nav ms-auto">     
+          
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['']">Logout</a>
+    </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="container ">
+    <br><br>
+    <div class="row" *ngFor='let ca of cs'>
+    <div class="card-group vgr-cards">
+      <div class="card">
+        <div class="card-img-body">
+        <img class="card-img" [src]=ca.Img>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">{{ca.Name}}</h4>
+           <p class="card-text">Duration : {{ca.Dur}}<br>
+              Fees : Rs.{{ca.Fee}}
+             </p>
+            <button type="button"id="z" class="btn btn-outline-primary" (click)="show(ca)" >Apply Now</button>
+          
+        </div>
+      </div>         
+     
+      </div>      
+      </div>
+      <a (click)="back()" style="color: brown;" class="btn btn-outline-primary">Back</a>
+     
+      <div id="m"></div>
+      <br><br><br> <br><br><br><br>
+      </div>

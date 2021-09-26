@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+ 
+
+#app-navbar {
+  background: linear-gradient(120deg, #0cf9e5, #f8d974)
+}
+
+.btn
+{
+  background: #ffe259;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.navbar
+{
+  padding: .1rem 0;
+}
+
+
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+.masthead {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("https://etssti.org/wp-content/uploads/2021/01/Whats-the-difference-between-a-webinar-and-a-virtual-conference-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+ .masthead-heading {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  color: darksalmon;
+  font-family: 'Times New Roman', Times, serif
+}
+
+
+
+
+
+
+
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/****Card**/
+
+/*card*/
+
+.button, .card-text, card-title{
+	font-family: 'Open Sans', sans-serif;
+	color:darksalmon
+  }
+  .container{
+	padding: 30px;
+  }
+  /*row*/
+.column {
+	float: left;
+	width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+/*row end*/
+  /*card new*/
+:root {
+	--main: ##1e1f26;
+	--accent: #b3b3b3;
+	--white: #fff;
+	--signal: #e31b2c;
+  }
+  *,
+  *::before,
+  *::after {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.4;
+  }
+  
+ 
+  .card {
+	/*background: url(https://images.unsplash.com/photo-1625595092803-545388db5615?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);*/
+	background: url(https://img.freepik.com/free-vector/high-tech-technology-geometric-background_29971-434.jpg?size=626&ext=jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 3em 0 0 0;
+	margin-top: 2rem;
+	max-width: 400px;
+	border-radius: 1rem;
+	overflow: hidden;
+	transition: ease-in-out 0.3s;
+	box-shadow: 5px 8px 12px 2px rgba(255, 163, 135, 0.2);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	transform: scale(0.7);
+  }
+  
+  .card-content {
+	background: linear-gradient(
+	  180deg,
+	  rgba(0, 0, 0, 0) 0%,
+	  rgba(0, 0, 0, 0.2) 10%,
+	  rgba(0, 0, 0, 0.4) 20%,
+	  rgba(0, 0, 0, 1) 100%
+	);
+	padding: 1em 2em;
+	/*color: var(--white);*/
+	color:aqua;
+
+	transform: translateY(24em);
+	transition: ease-in-out 0.5s;
+	height: 100%;
+  }
+  
+  .card-title {
+	position: relative;
+	color: rgb(241, 197, 101);
+  }
+  .card-title1 {
+	position: relative;
+	color:rgb(238, 226, 228);
+  }
+  .card:hover {
+	transform: scale(1.02);
+  }
+  .card:hover .card-titel::after {
+	transform: translateX(-10%);
+  }
+  .card:hover .card-content {
+	transform: translateY(0);
+  }
+  .card-title::after {
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: var(--signal);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateX(-90%);
+	transition: ease-in-out 0.5s;
+	transition-delay: 0.5s;
+  }
+  .card-button {
+	display: inline-block;
+	padding: 0.5rem 2rem;
+	border-radius: 0.2rem;
+	background-color: var(--signal);
+	cursor: pointer;
+	font-weight: 700;
+  }
+  
+  .card-button:hover,
+  .card-button:focus {
+	background-color: var(--accent);
+  }
+  
+/*card new*/
+  .card{
+	width: 20rem;
+	border-top-right-radius: 10px 10px;
+	border-top-left-radius: 50px 50px;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 50px 50px;
+	box-shadow: 2px 2px 15px 2px #ccc;
+  }
+  
+  .img{
+	 border-top-right-radius: 5px 5px;
+	border-top-left-radius: 50px 50px;
+  }
+  
+  .button{
+	transition: 0.8s ease;
+	background-color: #0082FE;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 2rem;
+  }
+  
+  .button:hover{
+	transition: 0.8s ease;
+	border-color: #0082FE;
+	background-color: #fff;
+	color: #0082FE;
+	font-size: 14px;
+  }
+

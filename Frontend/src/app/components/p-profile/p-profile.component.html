@@ -1,0 +1,102 @@
+
+<nav class="navbar sticky-top navbar-expand-lg " id="app-navbar">
+  <div class="container">
+      <a class="navbar-brand" href="#">Course Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class=" nav navbar-nav ms-auto">
+      
+      <li class="nav-item">
+          <a class="nav-link" [routerLink]="['regvw']">New Registration</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" [routerLink]="['coursecr']">Add Course</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['']">Logout</a>
+    </li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<div class="container"style="background-color: darkcyan;"> <br>
+  <div class="row" >
+ 
+      <div class="col-md-6 col-lg-6 col-12  mx-auto p-0">
+          <div class="card">
+              <div class="login-box">
+                  <div class="login-snip"> 
+                      
+                      <h3  style="color: honeydew;">My Profile</h3><br>
+                        
+                      <div class="login-space">
+                          
+                              <form>
+                                  <div class="group">
+                                      <label for="user" class="label">Name</label>
+                                      <input  type="text" class="input" placeholder="{{prof.Name}}"  name="email" readonly  > 
+                                   
+                                      
+                                     </div>
+                                  <div class="group">
+                                       <label for="user" class="label">Email</label>
+                                       <input  type="text" class="input" placeholder="{{prof.Email}}"  name="email" readonly  > 
+                                                                             
+                                      </div>
+                                  <div class="group">
+                                       <label for="pass" class="label">Phone</label>                                       
+                                       <input  type="text" class="input" placeholder="{{prof.Phone}}"  name="email" readonly  >
+                                       </div>
+                                       <div class="group">
+                                          <label for="pass" class="label">Qualification</label>
+                                          <input  type="text" class="input" placeholder="{{prof.Quali}}"  name="email" readonly  >
+                                        </div>
+                                          <div class="group">
+                                              <label for="pass" class="label">Skill</label>
+                                               <input  type="text" class="input" placeholder="{{prof.Skill}}"  name="email" readonly  >
+                                              </div>
+                                              <div class="group">
+                                                  <label for="pass" class="label">Address</label>
+                                                  <input  type="text" class="input" placeholder="{{prof.Address}}"  name="email" readonly  >
+                                                   </div>
+                                               
+                              <div class="hr"></div>
+                                                         
+                          </form>
+                      
+                          
+                      </div>
+                  </div>
+              </div>
+          </div><br> <br>
+      </div>
+  </div>
+  <h3 style="color: aquamarine;">My Courses</h3><br>
+  <div class="container">
+    <div class="row" *ngFor='let ca of cs' >
+      <div class="col-md-6">
+  <div class="card-group vgr-cards">
+    <div class="card"style="background-color: blanchedalmond;">
+      <div class="card-img-body">
+      <img class="card-img" [src]=ca.Img >
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">{{ca.Name}}</h4>
+        <p class="card-text">Duration : {{ca.Dur}}<br>
+            Fees : {{ca.Fee}}<br>Video Link :
+            <a [href]=ca.Vd style="color: blue;">{{ca.Vd}}</a>
+        </p>       
+       </div>
+    </div>
+    
+       </div>
+
+  </div>
+  </div>
+</div>
+
+</div>

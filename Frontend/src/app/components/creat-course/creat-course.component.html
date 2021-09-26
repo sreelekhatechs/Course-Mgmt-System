@@ -1,0 +1,77 @@
+
+
+<nav class="navbar sticky-top navbar-expand-lg " id="app-navbar">
+  <div class="container">
+      <a class="navbar-brand" href="#">Course Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+  
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['']">Logout</a>
+    </li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="container"style="background-color: darkcyan;"> <br><br>
+  <button class="btn btn-outline-warning" (click)="back()">Back</button>
+  <div class="row" >
+ 
+      <div class="col-md-6 col-lg-6 col-12  mx-auto p-0">
+          <div class="card">
+              <div class="login-box">
+                  <div class="login-snip"> 
+                      
+                      <h3  style="color: honeydew;">New Course</h3><br>
+                        
+                      <div class="login-space">
+                          
+                              <form (ngSubmit)="course()" >
+                                  <div class="group">
+                                      <label for="user" class="label"> Course Name</label>
+                                      <input id="user" type="text" class="input"[(ngModel)]="nc.name"name="name"  > 
+                                    
+                                      
+                                     </div>
+                                  <div class="group">
+                                       <label for="user" class="label">Duration</label>
+                                       <input id="user" type="text" class="input"[(ngModel)]="nc.dur"name="dur"  > 
+                                       
+                                      </div>
+                                  <div class="group">
+                                       <label for="pass" class="label">Course Fees</label>
+                                       <input id="user" type="text" class="input"[(ngModel)]="nc.fee"name="fee"  > 
+                                        
+                                       </div>
+                                       <div class="group">
+                                          <label for="pass" class="label">Image Link</label>
+                                          <input id="user" type="text" class="input"[(ngModel)]="nc.img"name="img"  > 
+                                          </div>
+                                          <div class="group">
+                                              <label for="pass" class="label">Video Link</label>
+                                              <input id="user" type="text" class="input"[(ngModel)]="nc.vd"name="vd"  > 
+                                              </div>
+                                              <div class="group">
+                                                <label for="pass" class="label">Max.Students</label>
+                                                <input id="user" type="text" class="input"[(ngModel)]="nc.max"name="max"  > 
+                                                </div>
+                                              <div class="group"> 
+                                                <button type="submit" class="btn input" style="color: rgb(226, 223, 14);">Create</button>
+                                             </div>
+                                               
+                              <div class="hr"></div>
+                                                         
+                          </form>
+                      
+                          
+                      </div>
+                  </div>
+              </div>
+          </div><br> <br>
+      </div>
+  </div>
+</div>

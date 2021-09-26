@@ -1,0 +1,68 @@
+
+<nav class="navbar sticky-top navbar-expand-lg " id="app-navbar">
+  <div class="container">
+      <a class="navbar-brand" href="#">Course Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+          <a class="nav-link " [routerLink]="['pro']">My Profile</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['login']">Courses</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['login']">My Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['']">Logout</a>
+    </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="container"style="background-color: darkcyan;"> <br>
+  <div class="row" >
+ 
+      <div class="col-md-6 col-lg-6 col-12  mx-auto p-0">
+          <div class="card">
+              <div class="login-box">
+                  <div class="login-snip"> 
+                      
+                      <h3  style="color: honeydew;">Complete Your Profile</h3><br>
+                        
+                      <div class="login-space">
+                          
+                              <form (ngSubmit)="studreg()" >
+                                  <div class="group">
+                                       <label for="user" class="label">Email</label>
+                                        <input id="user" type="text" class="input"[(ngModel)]="user.Email"name="email"  placeholder="Your Email"> 
+                                      </div>
+                                  <div class="group">
+                                       <label for="pass" class="label">Phone</label>
+                                        <input id="pass" type="number" class="input"[(ngModel)]="user.Phone" name="phone"  placeholder="Your Phone">
+                                       </div>
+                                       <div class="group">
+                                          <label for="pass" class="label">Qualification</label>
+                                           <input id="pass" type="text" class="input"[(ngModel)]="user.Quali"name="quali"  placeholder="Your Qualification">
+                                          </div>
+                                           <div class="group">
+                                                  <label for="pass" class="label">Address</label>
+                                                   <input id="pass" type="text" class="input"name="pswd"[(ngModel)]="user.Address" name="address"  placeholder="Your Address">
+                                                  </div>
+                                               <div class="group"> 
+                                      <button type="submit" class="btn input" style="color: rgb(226, 223, 14);">Submit</button> </div>
+                              <div class="hr"></div>
+                                                         
+                          </form>
+                      
+                          
+                      </div>
+                  </div>
+              </div>
+          </div><br> <br>
+      </div>
+  </div>
+</div>
